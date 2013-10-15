@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:sec="http://www.springframework.org/schema/security"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/security
+          http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
+
+    <!-- See also mailing list:
+         http://osgeo-org.1560.x6.nabble.com/Point-of-extention-for-password-encryption-td4978637.html#a4981816 -->
+    <bean id="md5PasswordEncoder"
+        class="org.geoserver.security.password.GeoServerMd5PasswordEncoder">
+    </bean>
+</beans>
