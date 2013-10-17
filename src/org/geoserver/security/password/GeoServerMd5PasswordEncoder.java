@@ -1,6 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/* Copyright (c) 2013 Centre for Development and Environment, University of Bern
+ * www.cde.unibe.ch. All rights reserved.
+ * This code is licensed under the GPL 2.0 license, available at the root
+ * application directory.
  */
 package org.geoserver.security.password;
 
@@ -9,7 +10,7 @@ import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 
 /**
  *
- * @author Adrian Weber, Centre for Development and Environment
+ * @author Adrian Weber, Centre for Development and Environment, University of Bern
  */
 public class GeoServerMd5PasswordEncoder extends AbstractGeoserverPasswordEncoder {
 

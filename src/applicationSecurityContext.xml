@@ -10,8 +10,9 @@
           http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 
     <!-- See also mailing list:
-         http://osgeo-org.1560.x6.nabble.com/Point-of-extention-for-password-encryption-td4978637.html#a4981816 -->
-    <bean id="md5PasswordEncoder"
-        class="org.geoserver.security.password.GeoServerMd5PasswordEncoder">
+         http://osgeo-org.1560.x6.nabble.com/Point-of-extention-for-password-encryption-td4978637.html -->
+    <bean id="md5PasswordEncoder" class="org.geoserver.security.password.GeoServerMd5PasswordEncoder">
+        <!-- Uncomment the following tag to prefix the encrypted password -->
+        <!-- property name="prefix" value="md5" /-->
     </bean>
 </beans>
